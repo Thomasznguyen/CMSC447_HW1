@@ -20,7 +20,7 @@ export const Delete = ({id}) => {
 
     return (
         <>
-            <button onClick={deletestudent}>Delete</button>
+            <button style={{marginLeft:20,padding: 5}} onClick={deletestudent}>Delete</button>
         </>
     )
 }

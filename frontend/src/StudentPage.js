@@ -57,9 +57,13 @@ function StudentPage() {
     }).then(data => setStudents(data))
   }
 
+  const studentCardStyle = {
+    margin: '50px',
+  };
   return (
       <>
-        <StudentCard students={students}/>
+        <StudentCard  students={students}/>
+
           <Form usernameInput={addName} handleNameChange={handleNameChange}
                 userIDInput={addID} handleIDChange={handleIDChange}
                 userPointsInput={addPoints} handlePointsChange={handlePointsChange}

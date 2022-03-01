@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {Delete} from "./Delete";
 import {
     Link,
     useParams,
     useNavigate
 } from "react-router-dom";
 
-import {Form} from "./form";
+import {FormForIndividuals} from "./formForIndividuals";
 
 export const StudentPage = () => {
     const {id} = useParams();
@@ -59,16 +58,17 @@ export const StudentPage = () => {
     return (
       <div >
           {students.length > 0 && students.map(data =>
-          <Form
+          <FormForIndividuals
+              key ={data.id}
               usernameInput={addName} handleNameChange={handleNameChange}
               userIDInput={addID} handleIDChange={handleIDChange}
               userPointsInput={addPoints} handlePointsChange={handlePointsChange}
+              ID={id}
               onFormSubmit={handleFormSubmit}
         />
 
           )}
-          <Delete id={id}/>
-          <Link to={"/"} ><button>Back to Students Page</button></Link>
+          <Link style={{marginLeft:20,padding: 5}} to={"/"} ><button>Back to Students Page</button></Link>
       </div>
     );
 }

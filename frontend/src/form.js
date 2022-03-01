@@ -21,11 +21,14 @@ export const Form = ({usernameInput,handleNameChange,userIDInput,handleIDChange,
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <input type="text"  required value={usernameInput} onChange={onNameChange}/>
-                <input type="number" required value={userIDInput} onChange={onIDChange}/>
-                <input type="number" required value={userPointsInput} onChange={onPointsChange}/>
-                <input type="submit"/>
+            <form onSubmit={handleSubmit} style={{padding: 20}}>
+                <text>  Name   </text>
+                <input style={{padding: 5}} type="text"  required value={usernameInput} onChange={onNameChange}/>
+                <text>   ID   </text>
+                <input style={{padding: 5}} type="number" required value={userIDInput} onChange={onIDChange}/>
+                <text>   Points   </text>
+                <input style={{padding: 5}} type="number" required value={userPointsInput} onChange={onPointsChange}/>
+                <input style={{marginLeft:20,padding: 5}} type="submit"/>
             </form>
         </>
 
