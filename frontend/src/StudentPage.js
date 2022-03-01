@@ -57,9 +57,7 @@ function StudentPage() {
     }).then(data => setStudents(data))
   }
 
-  const studentCardStyle = {
-    margin: '50px',
-  };
+
   return (
       <>
         <StudentCard  students={students}/>
