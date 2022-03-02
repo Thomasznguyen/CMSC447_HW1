@@ -4,7 +4,7 @@ How to run:
   One is for the Python Backend while the other is for the Javascript Frontend
   
   ** ALSO PLEASE NOTE PYTHON BACKEND RUNS ON : http://127.0.0.1:5000/ 
-  If yours is different please go into /CMSC447_HW1/frontend/src/setupProxy.js and change the LINE 7: {target: 'http://127.0.0.1:5000/'}, into your python backend ip. **
+  If yours is different please go into /CMSC447_HW1/frontend/src/setupProxy.js and change the LINE 7: target: 'http://127.0.0.1:5000/', into your python backend ip. **
   
   Steps on how to run this program.
   
