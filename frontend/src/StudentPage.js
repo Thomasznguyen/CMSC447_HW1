@@ -61,7 +61,7 @@ function StudentPage() {
   return (
       <>
         <StudentCard  students={students}/>
-
+          <text style={{fontSize: 30, paddingLeft: 10}}>Add new Student</text>
           <Form usernameInput={addName} handleNameChange={handleNameChange}
                 userIDInput={addID} handleIDChange={handleIDChange}
                 userPointsInput={addPoints} handlePointsChange={handlePointsChange}
